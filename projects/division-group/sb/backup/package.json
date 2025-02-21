@@ -1,0 +1,18 @@
+{
+  "name": "ion-core",
+  "version": "0.0.1",
+  "description": "A Library for web components ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "ion,core,web-components"
+  ],
+  "author": "Diana Martine",
+  "license": "MIT"
+}

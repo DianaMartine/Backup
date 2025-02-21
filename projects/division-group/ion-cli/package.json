@@ -1,0 +1,75 @@
+{
+    "name": "@division-group/ion-cli",
+    "displayName": "ion-cli",
+    "version": "0.0.1",
+    "description": "Ion Cli components for the diVIsion Group Design System",
+    "keywords": [
+        "design-system",
+        "division-group",
+        "design",
+        "system",
+        "cli",
+        "components",
+        "division"
+    ],
+    "categories": [
+        "Other"
+    ],
+    "author": {
+        "name": "diVIsion Group",
+        "email": "divisiontechgroup@gmail.com",
+        "url": "https://github.com/division-group"
+    },
+    "maintainers": [
+        {
+            "name": "Diana Martine",
+            "email": "diana_martine@outlook.com",
+            "url": "https://github.com/dianamartine"
+        }
+    ],
+    "license": "",
+    "homepage": "https://github.com/division-group/ion-cli#readme",
+    "bugs": {
+        "url": "https://github.com/division-group/ion-cli/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/division-group/ion-cli.git"
+    },
+    "publisher": "diVisionGroup",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "main": "./bin/index.js",
+    "files": [
+        "bin"
+    ],
+    "bin": {
+        "ion": "./bin/lib/index.js"
+    },
+    "scripts": {
+        "prepare": "husky install",
+        "prettier": "prettier --write .",
+        "pre:commit": "npm run prettier && git add .",
+        "clean": "rm -rf ./bin",
+        "build": "npm run clean && tsc",
+        "ion": "npm run build && npm i -g . && ion"
+    },
+    "dependencies": {
+        "npm": "^10.2.4",
+        "prompt": "^1.3.0",
+        "prompts": "^2.4.2",
+        "yargs": "^17.7.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.9.2",
+        "@types/prompt": "^1.1.8",
+        "@types/prompts": "^2.4.9",
+        "@types/yargs": "^17.0.31",
+        "husky": "^8.0.3",
+        "lit": "^3.1.0",
+        "prettier": "^3.1.0",
+        "standard-version": "^9.5.0",
+        "typescript": "^5.2.2"
+    }
+}
